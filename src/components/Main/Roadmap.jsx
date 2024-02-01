@@ -1,6 +1,7 @@
 import { roadmap } from "@constants/constants";
 import { motion } from "framer-motion";
 import { listAnimate } from "@utils";
+import RevealAnimate from "../RevealAnimate";
 
 export const Card = ({ text, idx }) => (
 	<motion.div
@@ -25,9 +26,11 @@ function Roadmap() {
 			viewport={{ once: true, amount: 0.2 }}
 			className="bg-roadmap w-full min-h-[100vh] relative p-section grid place-items-center"
 		>
-			<h2 className="uppercase bg-[#EEFFEF] bg-opacity-50 py-2.5 px-6 sm:px-8 rounded-full dp-shad-200">
-				TOKENOMICS
-			</h2>
+			<RevealAnimate>
+				<h2 className="uppercase bg-[#EEFFEF] bg-opacity-50 py-2.5 px-6 sm:px-8 rounded-full dp-shad-200">
+					TOKENOMICS
+				</h2>
+			</RevealAnimate>
 			<ul className="mt-[4em] mx-auto flex-column gap-4">
 				{roadmap?.map((text, idx) => (
 					<Card key={idx} text={text} idx={idx} />

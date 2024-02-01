@@ -25,7 +25,7 @@ const Header = ({ setOpenMenu }) => {
 
 			<div className="hidden md:flex-row gap-4">
 				{navLinks?.map((link, idx) => (
-					<LinkRow key={idx} {...link} />
+					<LinkRow key={idx} {...link} idx={idx} />
 				))}
 			</div>
 

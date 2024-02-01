@@ -8,12 +8,14 @@ import AOS from "aos";
 
 import "aos/dist/aos.css";
 import "./index.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
 	const [openMenu, setOpenMenu] = useState(false);
 
 	return (
 		<div className="wrapper isolate">
+			<ScrollToTop />
 			<AnimatePresence>
 				{openMenu && <Menu setOpenMenu={setOpenMenu} />}
 			</AnimatePresence>

@@ -4,6 +4,7 @@ import About from "@components/Main/About";
 import TokenInfo from "@components/Main/TokenInfo";
 import Roadmap from "@components/Main/Roadmap";
 import Footer from "@components/Footer";
+import RevealAnimate from "../components/RevealAnimate";
 
 function Home({ setOpenMenu }) {
 	return (
@@ -15,9 +16,9 @@ function Home({ setOpenMenu }) {
 				<Header setOpenMenu={setOpenMenu} />
 				<Hero />
 			</div>
+			<TokenInfo />
+			<About />
 			<main>
-				<TokenInfo />
-				<About />
 				<Roadmap />
 			</main>
 			<Footer />
