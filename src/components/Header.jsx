@@ -7,7 +7,7 @@ import logo from "@icons/logo.svg";
 
 const Header = ({ setOpenMenu }) => {
 	return (
-		<header className="max-sm:fixed max-sm:bg-gradient-header top-2 left-2 right-2 z-[200] max-sm:rounded-md max-sm:shadow-sm max-sm:backdrop-blur-md max-sm:bg-opacity-80 absolute flex-row gap-8 !justify-between mx-auto pr-2 sm:px-4 sm:py-2">
+		<header className="max-sm:fixed max-sm:bg-gradient-header top-2 left-2.5 right-2 z-[200] max-sm:rounded-md max-sm:shadow-sm max-sm:backdrop-blur-md max-sm:bg-opacity-80 absolute flex-row gap-8 !justify-between mx-auto pr-2 sm:px-4 sm:py-2">
 			<Link
 				to="home"
 				spy={true}

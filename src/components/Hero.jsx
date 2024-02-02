@@ -6,7 +6,7 @@ function Hero() {
 	return (
 		<div
 			id="home"
-			className="pt-[18vh] sm:pt-[10%] flex-column !justify-start min-h-screen bg-hero"
+			className="pt-[18vh] sm:pt-[10%] flex-column !justify-start min-h-[100svh] bg-hero"
 		>
 			<RevealAnimate delay={0.8}>
 				<h1 className="w-full uppercase font-variant relative text-center select-none whitespace-nowrap drop-shadow-hero">
