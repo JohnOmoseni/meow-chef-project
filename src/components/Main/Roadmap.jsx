@@ -24,14 +24,14 @@ function Roadmap() {
 			initial="hidden"
 			whileInView="visible"
 			viewport={{ once: true, amount: 0.2 }}
-			className="bg-roadmap w-full min-h-[100vh] relative p-section grid place-items-center"
+			className="bg-roadmap w-full relative p-section grid place-items-center"
 		>
 			<RevealAnimate>
-				<h2 className="uppercase bg-[#EEFFEF] bg-opacity-50 py-2.5 px-6 sm:px-8 rounded-full dp-shad-200">
+				<h2 className="w-max mx-auto uppercase bg-[#EEFFEF] bg-opacity-50 py-2.5 px-6 sm:px-10 rounded-full dp-shad-200">
 					TOKENOMICS
 				</h2>
 			</RevealAnimate>
-			<ul className="mt-[4em] mx-auto flex-column gap-4">
+			<ul className="mt-[5em] mx-auto flex-column gap-4">
 				{roadmap?.map((text, idx) => (
 					<Card key={idx} text={text} idx={idx} />
 				))}

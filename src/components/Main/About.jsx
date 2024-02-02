@@ -8,17 +8,17 @@ function About() {
 		<div
 			id="about"
 			className="relative p-section !pl-[3%] min-h-[100vh] bg-no-repeat bg-cover bg-center -mt-1"
-			style={{ backgroundImage: "url(/public/images/bg2.png)" }}
+			style={{ backgroundImage: "url(/images/bg2.png)" }}
 		>
-			<div className="relative">
-				<div className="sm:ml-[45%] sm:translate-x-[-1%]">
+			<div className="">
+				<div className="sm:ml-[48%] sm:translate-x-[-1%] md:translate-x-[-6%]">
 					<RevealAnimate>
-						<h3 className="uppercase font-variant">
-							information about little puff
+						<h3 className="max-sm:text-center uppercase font-variant">
+							Information about little puff
 						</h3>
 					</RevealAnimate>
 
-					<RevealAnimate className="relative mt-[3em] isolate bg-gradient-100 py-4 px-6 rounded-lg overflow-hidden">
+					<RevealAnimate className="relative mt-[3em] isolate bg-gradient-100 py-4 px-6 rounded-lg overflow-hidden md:max-w-[50ch]">
 						<div className="absolute inset-[2px] bg-[#daffdc] -z-10 rounded-[5px]"></div>
 						Meow Chef, also known by his adorable nickname Little Puff, is a
 						charming ragdoll cat with a love for cooking and creating delicious
@@ -33,13 +33,13 @@ function About() {
 						member of the cat community
 					</RevealAnimate>
 				</div>
-				<motion.div className="mx-auto relative sm:absolute -top-3 max-sm:left-6 max-sm:w-[400px] sm:max-w-[600px] select-none">
+				<motion.div className="mx-auto relative sm:absolute top-0 max-sm:left-8 max-sm:w-[450px] sm:max-w-[500px] md:max-w-[700px] select-none">
 					<img src={img} alt="" className="" />
 				</motion.div>
 			</div>
 
 			<RevealAnimate>
-				<h1 className="mt-6 uppercase font-variant px-1 relative text-center text-gradient-100 dp-shad-300 select-none whitespace-nowrap text-shadow-300">
+				<h1 className="sm:mt-[3rem] uppercase font-variant px-1 relative text-center text-gradient-100 dp-shad-300 select-none whitespace-nowrap text-shadow-300">
 					Meow chef
 				</h1>
 			</RevealAnimate>

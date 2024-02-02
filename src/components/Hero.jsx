@@ -4,7 +4,10 @@ import RevealAnimate from "./RevealAnimate";
 
 function Hero() {
 	return (
-		<div id="home" className="pt-[18vh] sm:pt-[10%] flex-column h-full bg-hero">
+		<div
+			id="home"
+			className="pt-[18vh] sm:pt-[10%] flex-column !justify-start min-h-screen bg-hero"
+		>
 			<RevealAnimate delay={0.8}>
 				<h1 className="w-full uppercase font-variant relative text-center select-none whitespace-nowrap drop-shadow-hero">
 					Meow chef
@@ -12,7 +15,7 @@ function Hero() {
 			</RevealAnimate>
 
 			<RevealAnimate
-				className="relative -mt-[55px] sm:-mt-[80px] mb-[2.5em] mx-auto icon min-w-[340px] max-w-[600px] md:max-w-[600px]"
+				className="relative -mt-[55px] sm:-mt-[80px] mb-[2.5em] mx-auto max-sm:ml-[-40px] min-w-[450px] max-w-[600px] md:max-w-[600px]"
 				delay={1.4}
 			>
 				<img src={hero} alt="" />

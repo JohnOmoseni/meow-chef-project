@@ -7,16 +7,16 @@ function TokenInfo() {
 	return (
 		<div
 			id="tokeninfo"
-			className="relative pt-[4em] px-3 sm:pt-[6em] pb-[3em] sm:pl-[5%] sm:pr-3 min-h-[150vh] bg-no-repeat bg-cover bg-center -mt-1"
-			style={{ backgroundImage: "url(/public/images/bg2.png)" }}
+			className="relative px-[4%] pt-[4em] sm:pt-[6em] pb-[3em] min-h-[140vh] bg-no-repeat bg-cover bg-center"
+			style={{ backgroundImage: "url(/images/bg2.png)" }}
 		>
 			<RevealAnimate>
-				<h3 className="w-full uppercase font-variant sm:w-max max-sm:text-center">
+				<h3 className="w-full uppercase font-variant md:w-max max-md:text-center">
 					Token Info
 				</h3>
 			</RevealAnimate>
-			<div className="my-8 sm:my-[3em] flex-column sm:grid grid-cols-two gap-3 justify-between mx-auto">
-				<RevealAnimate className="relative self-start isolate bg-gradient-100 p-6 rounded-lg overflow-hidden">
+			<div className="my-8 sm:my-[3em] flex-column md:justify-around md:grid grid-cols-two gap-3">
+				<RevealAnimate className="relative justify-self-start isolate bg-gradient-100 p-6 rounded-lg overflow-hidden">
 					<div className="absolute inset-[3px] bg-[#daffdc] -z-10 rounded-[5px]"></div>
 					$MEOWCHEF is a unique token that has recently launched within the
 					Solana Ecosystem. It is a tribute to Little Puff, the famous chef cat
@@ -31,7 +31,7 @@ function TokenInfo() {
 					shared interests and bring joy to others through the lovable character
 					of Little Puff and Cooking
 				</RevealAnimate>
-				<motion.div className="-mt-4 sm:-mt-[130px] mx-auto max-w-[340px] sm:max-w-[400px]">
+				<motion.div className="-mt-3 md:-mt-[130px] mx-auto max-w-[340px] sm:max-w-[500px]">
 					<img src={img} alt="" className="" />
 				</motion.div>
 			</div>

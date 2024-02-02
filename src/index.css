@@ -107,7 +107,7 @@
 
 @layer components {
 	.grid-cols-two {
-		grid-template-columns: 1fr auto;
+		grid-template-columns: minmax(400px, 50%) auto;
 	}
 	.grid-cols-features {
 		grid-auto-flow: column;

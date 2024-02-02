@@ -10,11 +10,12 @@ function Home({ setOpenMenu }) {
 	return (
 		<>
 			<div
-				className="relative bg-no-repeat bg-cover bg-center min-h-[100vh]"
-				style={{ backgroundImage: "url(/public/images/bg.png)" }}
+				className="relative bg-no-repeat bg-cover bg-center min-h-[100vh] z-10"
+				style={{ backgroundImage: "url(/images/bg2.png)" }}
 			>
 				<Header setOpenMenu={setOpenMenu} />
 				<Hero />
+				<div className="w-full h-[1.5em] absolute bottom-0 left-0 bg-gradient-200 -z-10"></div>
 			</div>
 			<TokenInfo />
 			<About />
