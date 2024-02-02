@@ -10,7 +10,7 @@ function Home({ setOpenMenu }) {
 	return (
 		<>
 			<div
-				className="relative bg-no-repeat bg-cover bg-center min-h-[100vh] z-10"
+				className="relative bg-no-repeat bg-cover bg-center min-h-[100svh] z-10"
 				style={{ backgroundImage: "url(/images/bg2.png)" }}
 			>
 				<Header setOpenMenu={setOpenMenu} />
